@@ -25,4 +25,10 @@ public class PersonTest {
     public void test_Get() {
         assertEquals("Tom", person.getFirstName());
     }
+
+    @Test
+    public void shouldReturnLetterTwhenGetFirstLetterName() {
+        PersonService service = new PersonService();
+        assertEquals("T", service.getFirstLetterName());
+    }
 }
